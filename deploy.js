@@ -5,7 +5,7 @@ const env = require('dotenv')
 env.config()
 const provider = new HDWalletProvider(
     process.env.pk,
-    'https://rinkeby.infura.io/v3/4dfa9cf8cca54b84bb67d367250ea792'
+    process.env.url
 )
 
 const web3 = new Web3(provider)
